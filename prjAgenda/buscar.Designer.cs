@@ -32,10 +32,12 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblnome = new System.Windows.Forms.Label();
-            this.lbltel = new System.Windows.Forms.Label();
-            this.lblemail = new System.Windows.Forms.Label();
             this.lbldata = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
+            this.lbltel = new System.Windows.Forms.Label();
+            this.lblnome = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +70,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.lbldata);
             this.groupBox1.Controls.Add(this.lblemail);
             this.groupBox1.Controls.Add(this.lbltel);
@@ -80,23 +84,14 @@
             this.groupBox1.Text = "Dados do Contato";
             this.groupBox1.Visible = false;
             // 
-            // lblnome
+            // lbldata
             // 
-            this.lblnome.AutoSize = true;
-            this.lblnome.Location = new System.Drawing.Point(35, 40);
-            this.lblnome.Name = "lblnome";
-            this.lblnome.Size = new System.Drawing.Size(43, 13);
-            this.lblnome.TabIndex = 0;
-            this.lblnome.Text = "lblnome";
-            // 
-            // lbltel
-            // 
-            this.lbltel.AutoSize = true;
-            this.lbltel.Location = new System.Drawing.Point(35, 75);
-            this.lbltel.Name = "lbltel";
-            this.lbltel.Size = new System.Drawing.Size(55, 13);
-            this.lbltel.TabIndex = 1;
-            this.lbltel.Text = "lbltelefone";
+            this.lbldata.AutoSize = true;
+            this.lbldata.Location = new System.Drawing.Point(35, 143);
+            this.lbldata.Name = "lbldata";
+            this.lbldata.Size = new System.Drawing.Size(38, 13);
+            this.lbldata.TabIndex = 3;
+            this.lbldata.Text = "lbldata";
             // 
             // lblemail
             // 
@@ -107,14 +102,44 @@
             this.lblemail.TabIndex = 2;
             this.lblemail.Text = "lblemail";
             // 
-            // lbldata
+            // lbltel
             // 
-            this.lbldata.AutoSize = true;
-            this.lbldata.Location = new System.Drawing.Point(35, 143);
-            this.lbldata.Name = "lbldata";
-            this.lbldata.Size = new System.Drawing.Size(38, 13);
-            this.lbldata.TabIndex = 3;
-            this.lbldata.Text = "lbldata";
+            this.lbltel.AutoSize = true;
+            this.lbltel.Location = new System.Drawing.Point(35, 75);
+            this.lbltel.Name = "lbltel";
+            this.lbltel.Size = new System.Drawing.Size(55, 13);
+            this.lbltel.TabIndex = 1;
+            this.lbltel.Text = "lbltelefone";
+            // 
+            // lblnome
+            // 
+            this.lblnome.AutoSize = true;
+            this.lblnome.Location = new System.Drawing.Point(35, 40);
+            this.lblnome.Name = "lblnome";
+            this.lblnome.Size = new System.Drawing.Size(43, 13);
+            this.lblnome.TabIndex = 0;
+            this.lblnome.Text = "lblnome";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(25, 180);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Alterar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(121, 180);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Excluir";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // buscar
             // 
@@ -145,5 +170,7 @@
         private System.Windows.Forms.Label lbltel;
         private System.Windows.Forms.Label lblnome;
         private System.Windows.Forms.Label lbldata;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
